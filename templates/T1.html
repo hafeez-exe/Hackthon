@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T1 - Premium Insight Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 100% 0%, rgba(27, 77, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(10, 31, 68, 0.2) 0%, transparent 60%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex-grow: 1;
+            justify-content: center;
+            z-index: 2;
+        }
+        .pillar-badge {
+            align-self: flex-start;
+            background: linear-gradient(135deg, var(--primary) 0%, #4F46E5 100%);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 15px rgba(27, 77, 255, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        .hook-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 54px;
+            font-weight: 900;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--white) 30%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 24px;
+        }
+        .body-text {
+            font-size: 24px;
+            line-height: 1.6;
+            color: var(--light);
+            font-weight: 400;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 40px;
+            z-index: 2;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary) 0%, #4F46E5 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+            box-shadow: 0 8px 16px rgba(27, 77, 255, 0.25);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+        .watermark {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pillar-badge">{{ pillar }}</div>
+        <div class="glass-card">
+            <div class="hook-text">{{ hook }}</div>
+            <div class="body-text">{{ caption | replace('\n', '<br>') }}</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <div class="watermark">jobingen.com</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "edu_1",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "key_points": [
+      "ATS scanning algorithms don't read PDFs well; stick to simple DOCX files.",
+      "Match your resume keywords exactly to the job description.",
+      "Use clean, single-column layouts. Avoid complex grids, text boxes, and charts.",
+      "Quantify your accomplishments. Say 'increased signups by 45%' instead of 'helped with marketing'."
+    ]
+  },
+  {
+    "id": "edu_2",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "key_points": [
+      "Subject line must be specific and value-driven (e.g., 'A quick observation about [Company] design').",
+      "Keep the email under 150 words. Be concise and straight to the point.",
+      "Show, don't tell: share a 1-page notion document of custom ideas you made for them.",
+      "The call to action should be low-friction: 'Open to a quick 10m chat next Tuesday?'"
+    ]
+  },
+  {
+    "id": "edu_3",
+    "pillar": "Educate",
+    "topic": "The hidden networking loophole: LinkedIn Alumni Tool",
+    "key_points": [
+      "Go to your university's LinkedIn page and click 'Alumni'.",
+      "Filter by the city you want to work in and the target company.",
+      "Send a warm message asking for advice, not a job: 'How did you navigate the transition from [Univ] to [Company]?'",
+      "80% of jobs are never publicly advertised; they are filled via warm referrals."
+    ]
+  },
+  {
+    "id": "brand_1",
+    "pillar": "Brand",
+    "topic": "Why JobInGen is banning unpaid internships",
+    "key_points": [
+      "Unpaid internships are elitist; only students who can afford to work for free can take them.",
+      "Our mission is democratizing career opportunities for all students, regardless of background.",
+      "Every employer partnering with JobInGen must commit to paying at least local minimum wage.",
+      "We believe talent is evenly distributed, but opportunity is not."
+    ]
+  },
+  {
+    "id": "brand_2",
+    "pillar": "Brand",
+    "topic": "Meet your new AI career co-pilot",
+    "key_points": [
+      "JobInGen isn't just a job board. It's an intelligent engine designed to guide you step-by-step.",
+      "From resume feedback to matching you with vetted tech startups, our AI guides your job search.",
+      "Sign up today and get your personalized career roadmaps in under 5 minutes."
+    ]
+  },
+  {
+    "id": "culture_1",
+    "pillar": "Culture",
+    "topic": "The 'hustle culture' myth: Why resting is actually productive",
+    "key_points": [
+      "Working 80-hour weeks causes burnout, which destroys long-term cognitive output.",
+      "At JobInGen, we practice focused 4-hour deep work blocks rather than 12-hour low-focus grinds.",
+      "Take your weekends off. Go for a run, read a book, sleep. Great code and ideas come from a rested brain."
+    ]
+  },
+  {
+    "id": "culture_2",
+    "pillar": "Culture",
+    "topic": "Behind the scenes: The JobInGen team's favorite slack channels",
+    "key_points": [
+      "#cringe-corporate-speak: Where we post the worst corporate jargon we find.",
+      "#pets-of-jobingen: Showing off our remote working assistants (cats and dogs).",
+      "#failed-ideas: Celebrating things we tried that flopped, because that is how we learn."
+    ]
+  }
+]

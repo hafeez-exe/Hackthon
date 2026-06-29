@@ -1,0 +1,541 @@
+[
+  {
+    "id": "hist_1",
+    "date": "2026-06-01",
+    "pillar": "Opportunity",
+    "topic": "Junior Backend Developer at Retool",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_2",
+    "date": "2026-06-02",
+    "pillar": "Brand",
+    "topic": "Our mission to democratize careers",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_3",
+    "date": "2026-06-03",
+    "pillar": "Educate",
+    "topic": "Cold email teardown",
+    "template": "T2 Carousel"
+  },
+  {
+    "id": "hist_4",
+    "date": "2026-06-04",
+    "pillar": "Opportunity",
+    "topic": "Product Intern at Notion",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_5",
+    "date": "2026-06-05",
+    "pillar": "Proof",
+    "topic": "Sarah Jenkins hired at Supabase",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_6",
+    "date": "2026-06-06",
+    "pillar": "Culture",
+    "topic": "Slack channels behind the scenes",
+    "template": "T6 Mentor Spotlight"
+  },
+  {
+    "id": "hist_7",
+    "date": "2026-06-07",
+    "pillar": "Educate",
+    "topic": "Resume ATS tips",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_8",
+    "date": "2026-06-08",
+    "pillar": "Opportunity",
+    "topic": "Growth Intern at Figma",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_9",
+    "date": "2026-06-09",
+    "pillar": "Proof",
+    "topic": "Alex Chen hired at Vercel",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_10",
+    "date": "2026-06-10",
+    "pillar": "Brand",
+    "topic": "Banning unpaid internships",
+    "template": "T4 Comparison"
+  },
+  {
+    "id": "hist_11",
+    "date": "2026-06-11",
+    "pillar": "Educate",
+    "topic": "LinkedIn alumni networking",
+    "template": "T2 Carousel"
+  },
+  {
+    "id": "hist_12",
+    "date": "2026-06-12",
+    "pillar": "Opportunity",
+    "topic": "Junior Designer at Linear",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_13",
+    "date": "2026-06-13",
+    "pillar": "Culture",
+    "topic": "Why rest is productive",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_14",
+    "date": "2026-06-14",
+    "pillar": "Opportunity",
+    "topic": "Frontend Intern at Stripe",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_15",
+    "date": "2026-06-15",
+    "pillar": "Proof",
+    "topic": "Maya Patel hired at Rippling",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_16",
+    "date": "2026-06-16",
+    "pillar": "Educate",
+    "topic": "Technical interview tips",
+    "template": "T2 Carousel"
+  },
+  {
+    "id": "hist_17",
+    "date": "2026-06-17",
+    "pillar": "Opportunity",
+    "topic": "Data Analyst at Scale AI",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_18",
+    "date": "2026-06-18",
+    "pillar": "Brand",
+    "topic": "We hire for skill, not prestige",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_19",
+    "date": "2026-06-19",
+    "pillar": "Proof",
+    "topic": "John Doe hired at Airbnb",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_20",
+    "date": "2026-06-20",
+    "pillar": "Culture",
+    "topic": "Hackathon highlights",
+    "template": "T7 Meme"
+  },
+  {
+    "id": "hist_21",
+    "date": "2026-06-21",
+    "pillar": "Educate",
+    "topic": "Portfolio structure for designers",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_22",
+    "date": "2026-06-22",
+    "pillar": "Opportunity",
+    "topic": "Mobile Dev Intern at Duolingo",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_23",
+    "date": "2026-06-23",
+    "pillar": "Proof",
+    "topic": "Emily Wang hired at Ramp",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_24",
+    "date": "2026-06-24",
+    "pillar": "Brand",
+    "topic": "Why we built JobInGen",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_25",
+    "date": "2026-06-25",
+    "pillar": "Opportunity",
+    "topic": "Ops Intern at Brex",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_26",
+    "date": "2026-06-26",
+    "pillar": "Educate",
+    "topic": "Negotiating your first salary",
+    "template": "T2 Carousel"
+  },
+  {
+    "id": "hist_27",
+    "date": "2026-06-27",
+    "pillar": "Opportunity",
+    "topic": "Marketing Specialist at Canva",
+    "template": "T3 Job Drop"
+  },
+  {
+    "id": "hist_28",
+    "date": "2026-06-28",
+    "pillar": "Proof",
+    "topic": "Michael Chang hired at Snowflake",
+    "template": "T5 Success Story"
+  },
+  {
+    "id": "hist_29",
+    "date": "2026-06-29",
+    "pillar": "Culture",
+    "topic": "Zoom meetings vs async docs",
+    "template": "T4 Comparison"
+  },
+  {
+    "id": "hist_30",
+    "date": "2026-06-30",
+    "pillar": "Educate",
+    "topic": "GitHub profile optimization",
+    "template": "T1 Insight Card"
+  },
+  {
+    "id": "hist_31",
+    "date": "2026-06-30",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2"
+  },
+  {
+    "id": "hist_32",
+    "date": "2026-06-30",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1"
+  },
+  {
+    "id": "hist_33",
+    "date": "2026-07-01",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2"
+  },
+  {
+    "id": "hist_34",
+    "date": "2026-07-02",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1"
+  },
+  {
+    "id": "hist_35",
+    "date": "2026-07-03",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2"
+  },
+  {
+    "id": "hist_36",
+    "date": "2026-07-04",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2"
+  },
+  {
+    "id": "hist_37",
+    "date": "2026-07-05",
+    "pillar": "Opportunity",
+    "topic": "Growth Marketing Intern",
+    "template": "T3"
+  },
+  {
+    "id": "hist_38",
+    "date": "2026-07-06",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1"
+  },
+  {
+    "id": "hist_39",
+    "date": "2026-07-07",
+    "pillar": "Opportunity",
+    "topic": "Junior Product Designer",
+    "template": "T3"
+  },
+  {
+    "id": "hist_40",
+    "date": "2026-07-08",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T6"
+  },
+  {
+    "id": "hist_41",
+    "date": "2026-07-09",
+    "pillar": "Brand",
+    "topic": "Meet your new AI career co-pilot",
+    "template": "T4"
+  },
+  {
+    "id": "hist_42",
+    "date": "2026-07-10",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2"
+  },
+  {
+    "id": "hist_43",
+    "date": "2026-07-11",
+    "pillar": "Opportunity",
+    "topic": "Junior Backend Engineer (Python)",
+    "template": "T3"
+  },
+  {
+    "id": "hist_44",
+    "date": "2026-07-12",
+    "pillar": "Culture",
+    "topic": "The 'hustle culture' myth: Why resting is actually productive",
+    "template": "T7"
+  },
+  {
+    "id": "hist_45",
+    "date": "2026-07-13",
+    "pillar": "Opportunity",
+    "topic": "Junior Product Designer",
+    "template": "T3"
+  },
+  {
+    "id": "hist_46",
+    "date": "2026-06-30",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T5",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_47",
+    "date": "2026-07-01",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_48",
+    "date": "2026-07-02",
+    "pillar": "Opportunity",
+    "topic": "Growth Marketing Intern",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_49",
+    "date": "2026-07-03",
+    "pillar": "Brand",
+    "topic": "Meet your new AI career co-pilot",
+    "template": "T4",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_50",
+    "date": "2026-07-04",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T5",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_51",
+    "date": "2026-07-05",
+    "pillar": "Culture",
+    "topic": "Behind the scenes: The JobInGen team's favorite slack channels",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_52",
+    "date": "2026-07-06",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_53",
+    "date": "2026-07-07",
+    "pillar": "Opportunity",
+    "topic": "Junior Backend Engineer (Python)",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_54",
+    "date": "2026-07-08",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T6",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_55",
+    "date": "2026-07-09",
+    "pillar": "Brand",
+    "topic": "Meet your new AI career co-pilot",
+    "template": "T4",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_56",
+    "date": "2026-07-10",
+    "pillar": "Opportunity",
+    "topic": "Junior Product Designer",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_57",
+    "date": "2026-07-11",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_58",
+    "date": "2026-07-12",
+    "pillar": "Opportunity",
+    "topic": "Junior Backend Engineer (Python)",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_59",
+    "date": "2026-07-13",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T5",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_60",
+    "date": "2026-06-30",
+    "pillar": "Culture",
+    "topic": "The 'hustle culture' myth: Why resting is actually productive",
+    "template": "T7",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_61",
+    "date": "2026-07-01",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_62",
+    "date": "2026-07-02",
+    "pillar": "Educate",
+    "topic": "3 cold emailing templates that got internships at top tech startups",
+    "template": "T2",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_63",
+    "date": "2026-07-03",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_64",
+    "date": "2026-07-04",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_65",
+    "date": "2026-07-05",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_66",
+    "date": "2026-07-06",
+    "pillar": "Educate",
+    "topic": "The hidden networking loophole: LinkedIn Alumni Tool",
+    "template": "T4",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_67",
+    "date": "2026-07-07",
+    "pillar": "Educate",
+    "topic": "The hidden networking loophole: LinkedIn Alumni Tool",
+    "template": "T4",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_68",
+    "date": "2026-07-08",
+    "pillar": "Opportunity",
+    "topic": "Junior Product Designer",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_69",
+    "date": "2026-07-09",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_70",
+    "date": "2026-07-10",
+    "pillar": "Opportunity",
+    "topic": "Junior Product Designer",
+    "template": "T3",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_71",
+    "date": "2026-07-11",
+    "pillar": "Proof",
+    "topic": "N/A",
+    "template": "T6",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_72",
+    "date": "2026-07-12",
+    "pillar": "Brand",
+    "topic": "Why JobInGen is banning unpaid internships",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  },
+  {
+    "id": "hist_73",
+    "date": "2026-07-13",
+    "pillar": "Educate",
+    "topic": "How to structure your resume for AI ATS filters",
+    "template": "T1",
+    "approved_variant": "Variant B"
+  }
+]

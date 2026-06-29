@@ -1,0 +1,32 @@
+[
+  {
+    "id": "job_1",
+    "pillar": "Opportunity",
+    "title": "Junior Backend Engineer (Python)",
+    "company": "Vectra AI",
+    "location": "Remote (US/Canada)",
+    "salary": "$85,000 - $110,000",
+    "perks": "Flexible hours, 401k match, $2k home office stipend",
+    "requirements": "Strong Python knowledge, experience with FastAPI, interest in Vector DBs."
+  },
+  {
+    "id": "job_2",
+    "pillar": "Opportunity",
+    "title": "Growth Marketing Intern",
+    "company": "Figma",
+    "location": "San Francisco, CA (Hybrid)",
+    "salary": "$45 - $55 / hour",
+    "perks": "Free catered lunches, mentor program, transit benefits",
+    "requirements": "Strong copywriting skills, familiarity with SEO and LinkedIn ads."
+  },
+  {
+    "id": "job_3",
+    "pillar": "Opportunity",
+    "title": "Junior Product Designer",
+    "company": "Linear",
+    "location": "Remote (Europe/UK)",
+    "salary": "€60,000 - €80,000",
+    "perks": "Unlimited PTO, annual company retreats, latest Macbook Pro",
+    "requirements": "Stunning Figma portfolio, obsessed with keyboard shortcuts, clean aesthetic."
+  }
+]

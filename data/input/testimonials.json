@@ -1,0 +1,32 @@
+[
+  {
+    "id": "proof_1",
+    "pillar": "Proof",
+    "student_name": "Sarah Jenkins",
+    "university": "University of Michigan",
+    "hired_role": "Software Engineering Intern",
+    "company": "Supabase",
+    "testimonial": "JobInGen completely bypassed the standard ATS black hole. I got matched with Supabase, did a quick 15-minute intro chat, and had my offer in 2 weeks. The AI-suggested projects were exactly what the team was looking for!",
+    "metrics": "2 weeks from match to offer"
+  },
+  {
+    "id": "proof_2",
+    "pillar": "Proof",
+    "student_name": "Alex Chen",
+    "university": "UT Austin",
+    "hired_role": "Product Manager Intern",
+    "company": "Vercel",
+    "testimonial": "I sent 150 applications on standard boards and got zero responses. On JobInGen, I filled out my profile, the AI matched me with 3 high-growth startups, and I got interviews with 2 of them. Landing Vercel is a dream come true.",
+    "metrics": "66% interview rate vs 0% on standard boards"
+  },
+  {
+    "id": "proof_3",
+    "pillar": "Proof",
+    "student_name": "Maya Patel",
+    "university": "Georgia Tech",
+    "hired_role": "Data Analyst Intern",
+    "company": "Rippling",
+    "testimonial": "The Mentor Spotlight on JobInGen connected me with an industry lead at Rippling who reviewed my portfolio. Two weeks later, I was hired! It's not just job hunting, it's a real career launchpad.",
+    "metrics": "Direct portfolio review & hire"
+  }
+]

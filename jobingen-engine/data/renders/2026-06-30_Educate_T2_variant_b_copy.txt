@@ -1,0 +1,31 @@
+==================================================
+JOBINGEN CONTENT PACK - 2026-06-30 - VARIANT B
+PILLAR: Educate
+TEMPLATE: T2
+==================================================
+
+[VISUAL HOOK]
+Most students freeze on 'tell me about yourself.'
+
+[LINKEDIN CAPTION]
+Here is why: You try to summarize your entire life story in 2 minutes. 
+
+No recruiter wants that.
+
+They don't want to hear about your high school grades or how much you 'love coding.' They want to know one thing: Can you do the job?
+
+Use our Present-Past-Future structure:
+1. Present: State your current major, primary skills, and active tech stacks.
+2. Past: Tell them about 1-2 projects you actually shipped.
+3. Future: Why this company matches your goal.
+
+Keep it under 90 seconds. Simplicity wins.
+
+[CTA]
+Follow JobInGen for the interview prep college never taught you.
+
+[HASHTAGS]
+#careers, #interviewtips, #JobInGen
+
+[ACCESSIBILITY ALT TEXT]
+POV screen layout showing structured interview structures.

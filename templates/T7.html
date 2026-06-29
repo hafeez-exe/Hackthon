@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T7 - Premium Meme Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(27, 77, 255, 0.08) 0%, transparent 60%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 90px;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .meme-badge {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            border-radius: 40px;
+        }
+        .meme-text-box {
+            font-family: 'Poppins', sans-serif;
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1.4;
+            color: var(--white);
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 0 40px;
+            letter-spacing: -0.01em;
+        }
+        .meme-visual-container {
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+            height: 550px;
+        }
+        .meme-panel {
+            border-radius: 24px;
+            padding: 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .panel-left {
+            background-color: rgba(239, 68, 68, 0.03);
+            border: 1px solid rgba(239, 68, 68, 0.15);
+        }
+        .panel-right {
+            background-color: rgba(59, 130, 246, 0.03);
+            border: 1px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(27, 77, 255, 0.15);
+        }
+        .panel-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .panel-title-left {
+            color: #EF4444;
+        }
+        .panel-title-right {
+            color: var(--primary);
+        }
+        .panel-illustration {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 110px;
+            line-height: 1;
+            gap: 20px;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        }
+        .panel-desc {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            color: var(--light);
+            line-height: 1.4;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <div class="meme-badge">Realistic Meme</div>
+    </div>
+    
+    <div class="meme-text-box">
+        When you apply to jobs in 2026:
+    </div>
+    
+    <div class="meme-visual-container">
+        <div class="meme-panel panel-left">
+            <div class="panel-title panel-title-left">Standard Job Boards</div>
+            <div class="panel-illustration">
+                💀📩❌
+            </div>
+            <div class="panel-desc">Applying to 300 jobs and getting ghosted by automated ATS filters.</div>
+        </div>
+        
+        <div class="meme-panel panel-right">
+            <div class="panel-title panel-title-right">JobInGen matching</div>
+            <div class="panel-illustration" style="filter: drop-shadow(0 10px 15px rgba(27,77,255,0.25));">
+                🚀🤝🎉
+            </div>
+            <div class="panel-desc">Getting matched directly to the Hiring Manager's calendar in 5 seconds.</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <span style="font-weight: 600; color: var(--light); font-size: 16px;">Skip the stress, start matching.</span>
+        <span style="font-weight: 700; color: var(--primary); font-size: 16px;">jobingen.com</span>
+    </div>
+</body>
+</html>

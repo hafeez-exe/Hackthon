@@ -1,0 +1,29 @@
+==================================================
+JOBINGEN CONTENT PACK - 2026-06-30 - VARIANT A
+PILLAR: Educate
+TEMPLATE: T2
+==================================================
+
+[VISUAL HOOK]
+ATS filters reject 75% of double-column resumes.
+
+[LINKEDIN CAPTION]
+Stop trying to make your resume look like a design portfolio. 
+
+Recruiters don't read double columns. ATS parsers don't either. They read single column left-aligned text blocks.
+
+Here is how to structure it:
+1. Single column left-aligned.
+2. Standard docx files over custom pdf vectors.
+3. Exact keyword matching from the Job Description.
+
+No premium templates. Clean, direct text is your only competitive edge.
+
+[CTA]
+Follow JobInGen for more ATS-optimized resume builder tips.
+
+[HASHTAGS]
+#careers, #resumetips, #JobInGen
+
+[ACCESSIBILITY ALT TEXT]
+Single column resume vs double column ATS layout.

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T2 - Premium Carousel Slide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(27, 77, 255, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(79, 70, 229, 0.08) 0%, transparent 50%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex-grow: 1;
+            justify-content: center;
+            z-index: 2;
+        }
+        .carousel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .slide-counter {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            color: var(--light);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        .slide-content {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--white) 30%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .slide-content span {
+            color: var(--primary);
+        }
+        .slide-sub {
+            font-size: 22px;
+            line-height: 1.6;
+            color: var(--light);
+            font-weight: 400;
+            margin-top: 15px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 40px;
+            z-index: 2;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+        .nav-cue {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .arrow-icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-header">
+            <span>{{ pillar }}</span>
+            <div class="slide-counter">Slide {{ slide_num }} of {{ total_slides }}</div>
+        </div>
+        <div class="glass-card">
+            <div class="slide-content">
+                {{ slide_text | replace('\n', '<br>') }}
+            </div>
+            {% if slide_num == 1 %}
+            <div class="slide-sub">Swipe left to read the full strategy ➔</div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <div class="nav-cue">
+            <span>{{ "Next Slide" if slide_num < total_slides else "Create Free Account" }}</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

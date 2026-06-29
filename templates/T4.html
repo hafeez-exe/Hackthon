@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T4 - Premium Comparison Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+            --danger: #FA5252;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(27, 77, 255, 0.1) 0%, transparent 50%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 90px;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .comparison-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+            color: var(--white);
+        }
+        .comparison-badge {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 650px;
+        }
+        .column {
+            border-radius: 24px;
+            padding: 44px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+        }
+        .column-left {
+            background-color: rgba(250, 82, 82, 0.03);
+            border: 1px dashed rgba(250, 82, 82, 0.2);
+        }
+        .column-right {
+            background-color: rgba(27, 77, 255, 0.04);
+            border: 1px solid var(--primary);
+            box-shadow: 0 15px 35px rgba(27, 77, 255, 0.15);
+        }
+        .col-header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .col-badge {
+            align-self: flex-start;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 14px;
+            border-radius: 8px;
+        }
+        .badge-left {
+            background-color: rgba(250, 82, 82, 0.15);
+            color: var(--danger);
+            border: 1px solid rgba(250, 82, 82, 0.2);
+        }
+        .badge-right {
+            background-color: rgba(27, 77, 255, 0.15);
+            color: #7AA2FF;
+            border: 1px solid rgba(27, 77, 255, 0.2);
+        }
+        .col-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin-top: 10px;
+            letter-spacing: -0.01em;
+        }
+        .title-left {
+            color: var(--danger);
+        }
+        .title-right {
+            color: var(--white);
+        }
+        .points-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 30px;
+            list-style: none;
+        }
+        .point-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            font-size: 20px;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        .point-item-left {
+            color: var(--light);
+        }
+        .point-item-right {
+            color: var(--light);
+        }
+        .point-icon {
+            font-size: 20px;
+            line-height: 1;
+            margin-top: 3px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="comparison-title">{{ pillar | default('Programmatic') }} Comparison</div>
+        <div class="comparison-badge">The Paradigm Shift</div>
+    </div>
+    
+    <div class="comparison-grid">
+        <div class="column column-left">
+            <div class="col-header">
+                <span class="col-badge badge-left">Traditional Way</span>
+                <h3 class="col-title title-left">{{ hook }}</h3>
+            </div>
+            <ul class="points-list">
+                <li class="point-item point-item-left">
+                    <span class="point-icon">❌</span>
+                    <span>{{ caption | replace('\n', '<br>') }}</span>
+                </li>
+                    <span class="point-icon">❌</span>
+                    <span>Unpaid internship listings that exploit student labor</span>
+                </li>
+                <li class="point-item point-item-left">
+                    <span class="point-icon">❌</span>
+                    <span>Endless automated rejection letters and recruiter ghosting</span>
+                </li>
+            </ul>
+            <div style="font-size: 16px; color: #475569; font-weight: 600;">Time: 3+ Months of stress</div>
+        </div>
+        
+        <div class="column column-right">
+            <div class="col-header">
+                <span class="col-badge badge-right">JobInGen Way</span>
+                <h3 class="col-title title-right">Direct AI Matching</h3>
+            </div>
+            <ul class="points-list">
+                <li class="point-item point-item-right">
+                    <span class="point-icon">✅</span>
+                    <span style="color: var(--white);">Matched directly to hiring manager dashboards based on skill</span>
+                </li>
+                <li class="point-item point-item-right">
+                    <span class="point-icon">✅</span>
+                    <span style="color: var(--white);">100% vetted, minimum-wage guaranteed tech placements</span>
+                </li>
+                <li class="point-item point-item-right">
+                    <span class="point-icon">✅</span>
+                    <span style="color: var(--white);">Direct adaptive mock feedback scheduled within 14 days</span>
+                </li>
+            </ul>
+            <div style="font-size: 16px; color: #7AA2FF; font-weight: 700;">Time: Offer in 2 Weeks</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <span style="font-weight: 600; color: var(--light); font-size: 16px;">Skip the black hole: jobingen.com</span>
+    </div>
+</body>
+</html>
+

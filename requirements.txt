@@ -1,0 +1,9 @@
+flask
+flask-cors
+jinja2
+pillow
+python-dotenv
+openai
+playwright
+pydantic
+pypdf

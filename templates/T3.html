@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T3 - Premium Job Drop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 100% 0%, rgba(27, 77, 255, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(10, 31, 68, 0.15) 0%, transparent 50%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 90px;
+            overflow: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .opportunity-badge {
+            background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+        }
+        .job-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 44px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+        .company-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .company-logo {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--primary);
+            font-size: 36px;
+            font-weight: 800;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .company-name {
+            font-size: 18px;
+            color: var(--light);
+            font-weight: 600;
+        }
+        .job-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+        .job-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 24px;
+            border-radius: 16px;
+        }
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .detail-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .detail-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+        }
+        .requirements {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .req-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .req-list {
+            font-size: 18px;
+            color: #E2E8F0;
+            line-height: 1.5;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary) 0%, #4F46E5 100%);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            padding: 16px 36px;
+            border-radius: 14px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 25px rgba(27, 77, 255, 0.3);
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <div class="opportunity-badge">Vetted Job Opening</div>
+    </div>
+    
+    <div class="job-card">
+        <div class="company-header">
+            <div class="company-logo">{{ company[0] }}</div>
+            <div class="company-info">
+                <div class="company-name">{{ company }}</div>
+                <div class="job-title">{{ title }}</div>
+            </div>
+        </div>
+        
+        <div class="job-details-grid">
+            <div class="detail-item">
+                <span class="detail-label">📍 Location</span>
+                <span class="detail-value">{{ location }}</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">💰 Salary</span>
+                <span class="detail-value">{{ salary }}</span>
+            </div>
+            <div class="detail-item" style="grid-column: span 2;">
+                <span class="detail-label">🎁 Key Perks</span>
+                <span class="detail-value">{{ perks }}</span>
+            </div>
+        </div>
+        
+        <div class="requirements">
+            <span class="req-title">Minimum Requirements:</span>
+            <div class="req-list">{{ requirements }}</div>
+        </div>
+        
+        <div class="cta-button">Apply with One Tap on JobInGen</div>
+    </div>
+    
+    <div class="footer">
+        <span style="color: var(--light); font-size: 15px; font-weight: 600;">No ATS black holes. Handled directly by managers.</span>
+        <span style="color: var(--primary); font-size: 15px; font-weight: 700;">jobingen.com/apply</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T6 - Premium Mentor Spotlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: {{ primary_color | default('#1B4DFF') }};
+            --dark: {{ dark_color | default('#0A1F44') }};
+            --light: {{ light_color | default('#EAF1FF') }};
+            --white: #FFFFFF;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 1080px;
+            height: 1080px;
+            background-color: var(--dark);
+            background-image: 
+                radial-gradient(circle at 100% 100%, rgba(27, 77, 255, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 0% 0%, rgba(79, 70, 229, 0.08) 0%, transparent 50%);
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex-grow: 1;
+            justify-content: center;
+            z-index: 2;
+        }
+        .spotlight-badge {
+            align-self: flex-start;
+            background: linear-gradient(135deg, var(--primary) 0%, #4F46E5 100%);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 24px;
+            border-radius: 40px;
+            box-shadow: 0 4px 12px rgba(27, 77, 255, 0.25);
+        }
+        .mentor-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .mentor-quote {
+            font-size: 28px;
+            line-height: 1.6;
+            color: var(--white);
+            font-weight: 500;
+            font-style: italic;
+        }
+        .mentor-identity {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 30px;
+        }
+        .mentor-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, #4F46E5 100%);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 16px rgba(27, 77, 255, 0.25);
+        }
+        .mentor-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .mentor-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--white);
+        }
+        .mentor-title {
+            font-size: 18px;
+            color: var(--light);
+            font-weight: 500;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 40px;
+            z-index: 2;
+        }
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--white);
+        }
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spotlight-badge">Mentor Spotlight</div>
+        
+        <div class="mentor-card">
+            <p class="mentor-quote">
+                "{{ testimonial }}"
+            </p>
+            
+            <div class="mentor-identity">
+                <div class="mentor-avatar">{{ student_name[0] }}</div>
+                <div class="mentor-info">
+                    <span class="mentor-name">Alex Rivera</span>
+                    <span class="mentor-title">Lead Frontend Engineer at <strong>Vercel</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo-lockup">
+            <div class="logo-icon">J</div>
+            <div class="logo-text">JobIn<span>Gen</span></div>
+        </div>
+        <span style="font-weight: 600; color: var(--light); font-size: 16px;">Chat with vetted tech mentors at jobingen.com</span>
+    </div>
+</body>
+</html>
